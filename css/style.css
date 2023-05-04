@@ -522,7 +522,70 @@ button {
   width: 100%;
 }
 
+.about_bg {
+  background: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 90px 0;
+}
+
+.about_bg .titlepage {
+  text-align: left;
+  padding: 0;
+}
+
+.about_bg .titlepage p {
+  color: #292e39;
+  font-size: 17px;
+  line-height: 35px;
+  font-weight: 500;
+  padding: 20px 0px 35px 0px;
+}
+
+.about_img figure {
+  margin: 0;
+}
+
+.about_img figure img {
+  width: 100%;
+}
+
 /** end about section **/
+
+.facebook-icon::before {
+  background: #3b5998;
+  content: "/20";
+  position: absolute;
+  bottom: -30px;
+  right: -37px;
+  width: 40px;
+  height: 90px;
+  border: 20px solid #eee;
+  border-radius: 25px;
+}
+
+.facebook-icon::after {
+  background: #eee;
+  content: "/20";
+  position: absolute;
+  top: 50px;
+  right: 5px;
+  width: 55px;
+  height: 20px;
+}
+
+.facebook-icon {
+  background: #3b5998;
+  text-indent: -999em;
+  width: 100px;
+  height: 110px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  border: 15px solid #3b5998;
+  border-bottom: 0;
+  display: inline-block;
+}
 
 /** mobile section **/
 
@@ -605,6 +668,14 @@ button {
   bottom: -65px;
   background: url(../images/cli_cross.png);
   background-repeat: no-repeat;
+}
+
+#fb {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background: url(../images/fb_icon.png);
+  background-repeat: round;
 }
 
 .jonu {
