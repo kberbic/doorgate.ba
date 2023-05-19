@@ -139,22 +139,25 @@
                   </div>
                </div>
                <div class="col-md-6 offset-md-3">
-                  <form id="request" class="main_form">
+                  <form action="http://postmail.invotes.com/send" method="post" id="email_form" class="main_form">
                      <div class="row">
                         <div class="col-md-12 ">
-                           <input class="contactus" placeholder="Ime i prezime" type="type" name="Full Name"> 
+                           <input class="contactus" placeholder="Ime i prezime" type="type" name="subject" required> 
                         </div>
                         <div class="col-md-12">
-                           <input class="contactus" placeholder="Telefona" type="type" name="Phone Number"> 
+                           <input class="contactus" placeholder="Telefona" type="type" name="phone" required>
                         </div>
                         <div class="col-md-12">
-                           <input class="contactus" placeholder="Mail" type="type" name="Email">                          
+                           <input class="contactus" placeholder="Mail" type="type" name="email" required>                        
                         </div>
                         <div class="col-md-12">
-                           <textarea class="contactus" placeholder="Poruka" type="type" Message="Name"></textarea>
+                           <textarea class="contactus" placeholder="Poruka" type="type" name="text" required></textarea>
                         </div>
+                     <input type="hidden" name="access_token" value="abc123" />
+                     <input type="hidden" name="success_url" value="." />
+                     <input type="hidden" name="error_url" value=".?err=1" />
                         <div class="col-sm-12">
-                           <button class="send_btn">Potvrdi</button>
+                           <input id="submit_form" class="send_btn" type="submit" value="Potvrdi" />
                         </div>
                      </div>
                   </form>
