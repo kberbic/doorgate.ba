@@ -864,3 +864,14 @@ ul.cont li {
 .our_box figure img {
   width: 100%;
 }
+
+.profile {
+  background-image: url("../images/cross_img.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 60%;
+  align-self: center;
+  width: 85px;
+  height: 110px;
+  margin: 0 auto;
+}
