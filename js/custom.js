@@ -21,8 +21,8 @@ $(function () {
 		if(window.location.href.endsWith('email_success=true'))
 			alert("Poruka je uspjesno poslana.");
 		else if (window.location.href.endsWith('email_success=false'))
-			alert("Doslo je do greske, molimo pokusajte kasnije.");
-			
+			alert("Doslo je do greske, molimo pokusajte poslije.");
+
 		$(".main-menu ul li.megamenu").mouseover(function () {
 			if (!$(this).parent().hasClass("#wrapper")) {
 				$("#wrapper").addClass('overlay');
